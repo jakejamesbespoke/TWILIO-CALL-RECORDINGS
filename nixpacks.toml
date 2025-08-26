@@ -1,0 +1,14 @@
+[providers]
+node = "18"
+
+[phases.setup]
+aptPkgs = ['...', 'curl']
+
+[phases.install]
+cmds = ['npm ci']
+
+[phases.build]
+cmds = ['echo "Build completed"']
+
+[start]
+cmd = 'npm start'
